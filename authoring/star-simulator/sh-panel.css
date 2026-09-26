@@ -1,0 +1,239 @@
+:root {
+  --sh-bg: rgba(4, 5, 12, 0.92);
+  --sh-border: rgba(161, 174, 255, 0.11);
+  --sh-text: rgba(241, 243, 255, 0.9);
+  --sh-text-dim: rgba(204, 209, 238, 0.4);
+  --sh-text-mid: rgba(208, 214, 246, 0.6);
+  --sh-surface: rgba(151, 164, 255, 0.075);
+  --sh-surface-hover: rgba(151, 164, 255, 0.13);
+  --sh-width: 326px;
+  --sh-font: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.sh-panel {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  width: var(--sh-width);
+  max-width: 88vw;
+  height: 100%;
+  overflow: hidden auto;
+  overscroll-behavior: contain;
+  border-left: 1px solid var(--sh-border);
+  background: var(--sh-bg);
+  color: var(--sh-text);
+  font: 12px/1.4 var(--sh-font);
+  backdrop-filter: blur(22px) saturate(118%);
+  -webkit-backdrop-filter: blur(22px) saturate(118%);
+  transition: width 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 200ms ease;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.sh-panel input:not([type="range"]):not([type="color"]):not([type="checkbox"]):not([type="radio"]),
+.sh-panel textarea,
+.sh-panel [contenteditable="true"] { -webkit-user-select: text; user-select: text; }
+
+.sh-panel::before {
+  display: block;
+  padding: 18px 18px 13px;
+  border-bottom: 1px solid var(--sh-border);
+  color: rgba(222, 226, 255, 0.67);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: 0.2em;
+  content: "TWIGL / PLUME SYSTEM";
+}
+
+.sh-panel.collapsed {
+  width: 0;
+  min-width: 0;
+  overflow: hidden;
+  border-left-width: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sh-panel-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: var(--sh-width);
+  padding: 10px 14px 34px;
+}
+
+.sh-folder { margin-bottom: 2px; }
+.sh-context-hidden { display: none !important; }
+
+.sh-folder-head {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 2px 7px;
+  border: 0;
+  background: none;
+  color: var(--sh-text-mid);
+  font: 650 10px/1 var(--sh-font);
+  letter-spacing: 1.65px;
+  text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+  transition: color 150ms ease;
+}
+
+.sh-folder-head:hover { color: var(--sh-text); }
+.sh-arrow { display: inline-block; font-size: 9px; transition: transform 200ms ease; }
+.sh-folder.collapsed .sh-arrow { transform: rotate(-90deg); }
+
+.sh-folder-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-height: 4000px;
+  padding-left: 4px;
+  overflow: hidden;
+  transition: max-height 300ms ease, opacity 200ms ease;
+}
+
+.sh-folder.collapsed > .sh-folder-body {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sh-ctrl { display: flex; flex-direction: column; gap: 6px; padding: 6px 4px; }
+.sh-ctrl-head { display: flex; align-items: baseline; justify-content: space-between; }
+
+.sh-label {
+  color: var(--sh-text-dim);
+  font-size: 9px;
+  font-weight: 560;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+
+.sh-value {
+  min-width: 44px;
+  color: var(--sh-text-mid);
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.sh-slider input[type="range"] {
+  width: 100%;
+  height: 3px;
+  margin: 0;
+  border-radius: 2px;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background: var(--sh-surface);
+  cursor: pointer;
+}
+
+.sh-slider input[type="range"]::-webkit-slider-thumb {
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-radius: 50%;
+  appearance: none;
+  -webkit-appearance: none;
+  background: #e9ecff;
+  box-shadow: 0 0 8px rgba(121, 142, 255, 0.5);
+}
+
+.sh-slider input[type="range"]::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-radius: 50%;
+  background: #e9ecff;
+}
+
+.sh-color,
+.sh-toggle,
+.sh-select { flex-direction: row; align-items: center; justify-content: space-between; }
+
+.sh-color input[type="color"] {
+  width: 38px;
+  height: 21px;
+  padding: 1px;
+  border: 1px solid var(--sh-border);
+  border-radius: 3px;
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.sh-color input[type="color"]::-webkit-color-swatch-wrapper { padding: 0; }
+.sh-color input[type="color"]::-webkit-color-swatch { border: 0; border-radius: 2px; }
+
+.sh-select select {
+  width: 154px;
+  padding: 5px 22px 5px 7px;
+  overflow: hidden;
+  border: 1px solid var(--sh-border);
+  border-radius: 3px;
+  outline: 0;
+  background: #0c0e1a;
+  color: rgba(229, 232, 255, 0.72);
+  font: 10px var(--sh-font);
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.sh-switch { position: relative; display: inline-block; width: 32px; height: 16px; cursor: pointer; }
+.sh-switch input { position: absolute; width: 0; height: 0; opacity: 0; }
+
+.sh-knob {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: var(--sh-surface);
+  transition: background 180ms ease;
+}
+
+.sh-knob::after {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  content: "";
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.sh-switch input:checked + .sh-knob { background: rgba(116, 133, 255, 0.28); }
+.sh-switch input:checked + .sh-knob::after { transform: translateX(16px); background: #f4f5ff; }
+
+.sh-btn {
+  width: 100%;
+  margin: 3px 0;
+  padding: 9px 12px;
+  border: 1px solid var(--sh-border);
+  border-radius: 3px;
+  background: var(--sh-surface);
+  color: var(--sh-text);
+  font: 650 9px var(--sh-font);
+  letter-spacing: 1.45px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 150ms ease, border-color 150ms ease;
+}
+
+.sh-btn:hover { border-color: rgba(149, 163, 255, 0.27); background: var(--sh-surface-hover); }
+.sh-panel::-webkit-scrollbar { width: 5px; }
+.sh-panel::-webkit-scrollbar-track { background: transparent; }
+.sh-panel::-webkit-scrollbar-thumb { border-radius: 3px; background: rgba(167, 178, 255, 0.14); }
+
+@media (max-width: 760px) {
+  :root { --sh-width: min(326px, 88vw); }
+  .sh-panel-body { min-width: min(326px, 88vw); }
+}
