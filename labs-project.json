@@ -3,7 +3,7 @@
   "slug": "twigl-plume-sphere",
   "repository": "https://github.com/sntx-labs/star-simulator",
   "liveUrl": "https://labs.sntx.co/experiments/twigl-plume-sphere/",
-  "sourceCommit": "ccbb95eb87e6c0631db3430e0836b282220ef1c8",
+  "sourceCommit": "c656d1746d091eefbc1013a7e458aa8012f7a52f",
   "importedAt": "2026-09-26",
   "upstream": null,
   "authoringSnapshot": "authoring/star-simulator",
