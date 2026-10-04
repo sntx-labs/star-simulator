@@ -1,6 +1,6 @@
 # Star Simulator
 
-Private working repository for [Star Simulator](https://labs.sntx.co/experiments/twigl-plume-sphere/). Updated from Syntax Labs version 66, commit `c307777d0c866467b827247de4c290ea20baf81a`, on 2026-10-03.
+Private working repository for [Star Simulator](https://labs.sntx.co/experiments/twigl-plume-sphere/). Updated from Syntax Labs version 67, commit `9fd851a087b5618b95d486e2af84e1170acdf627`, on 2026-10-03.
 
 ## Run the current Labs version
 
@@ -36,3 +36,5 @@ To prepare runtime assets for the separate authoring snapshot, run `npm run labs
 ## Graphics selection
 
 The published experience waits for an explicit High, Medium, or Low choice before loading the scene. Rendering budgets are applied before GPU allocation and reapplied when switching any of the six visual presets. The editable authoring snapshot shares the budget module; the published shell remains the reference for the entry screen.
+
+Chromosphere Surge is the starting visual preset at every graphics level. Azure Plume and the other four presets remain selectable.

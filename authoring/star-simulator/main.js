@@ -135,7 +135,7 @@ const defaults = Object.freeze({
   paused: false,
 });
 
-const state = applyGraphicsProfile(defaults, graphicsLevel);
+const state = applyGraphicsProfile({ ...defaults, ...SCENE_PRESETS.find(preset => preset.id === "chromosphere-surge").settings }, graphicsLevel);
 const activePreset = () => TWIGL_PRESETS.find(preset => preset.id === state.twiglPreset) || TWIGL_PRESETS[0];
 
 const renderer = new THREE.WebGLRenderer({
@@ -1651,7 +1651,7 @@ function resize() {
 
 const panel = new window.SHPanel(document.querySelector("#controls"));
 const panelControllers = [];
-const scenePresetState = { scenePreset: "authored-default" };
+const scenePresetState = { scenePreset: "chromosphere-surge" };
 let scenePresetControl = null;
 let applyingScenePreset = false;
 
