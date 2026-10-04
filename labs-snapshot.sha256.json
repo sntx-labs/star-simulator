@@ -1,8 +1,7 @@
 {
   "public/experiments/twigl-plume-sphere/assets/index-M0w_AoWE.css": "61783b8fab046c02ffd525a392b624fd87b3de4c2f2faadbe05a9317926de7b6",
-  "public/experiments/twigl-plume-sphere/assets/star-simulator-febddc3d.js": "febddc3da3b41044ee0978e4c2ec448628853b340fe2a307836dd3d21c11c9e7",
-  "public/experiments/twigl-plume-sphere/experience.html": "b3b007dcb8f2db066fa9970d710fda9414f82d03f3c9d429dc59fe76463d7383",
-  "public/experiments/twigl-plume-sphere/index.html": "e9c3cfb5ee02a43b25e30322924f3e9df88e7e0a81cc78efb212450eb413a845",
+  "public/experiments/twigl-plume-sphere/experience.html": "e64ea617d97b537c122b52c349abe8c25ecaaa016ecb4257d2a3ef714ee5cf4b",
+  "public/experiments/twigl-plume-sphere/index.html": "c34db34983fd260f3d5508f83a7c5e2ae6e5db0478a96e7f73e308e74a6e4d00",
   "public/ui/analytics.js": "335f2017714c3d5fae88d0bac4ae348f1a3fc520c0a0cc1720421bd403fdda9f",
   "public/ui/booking-cable-renderer.js": "2c6e3547a646d0c861f05fe6b36f8c2289cc7628fbb042c8c649a410186577a6",
   "public/ui/booking-cables.js": "1b84ac971972bf838168e179d14588504d4b1a9a5f5b08bad5b5f9ae5b8ad38e",
@@ -13,7 +12,7 @@
   "public/ui/experience-entry.js": "9097a656c3037b5922d711cea0097f45ab83de8c6975d46802ffa7274928447d",
   "public/ui/experience-loading.js": "1ba96f27d5e062695ee35ac139cdd1914c2e79852ffc3a89a93bd3af58c0ba79",
   "public/ui/experience-shell.css": "572666d770b900ec048deb5d30aabe5af6a5d4f77adcb88014b27d4a425ddbe3",
-  "public/ui/experience-shell.js": "de7dcf86d5ebd5484fe09ea232f30fb30fec5ab73a03c361bd4eaf5becf40978",
+  "public/ui/experience-shell.js": "e9f9839b05cf132e197a033e2e224c238f8be13d252a1d4ca4ac2c2e531c3cbe",
   "public/ui/labs-panels.css": "fab0fb28b710f24068f701ed25ac19839c2dfc2b41ebade6ccf88956083ba4b5",
   "public/ui/labs-panels.js": "ef05dcad8ea2fff53bb3346a19d98138a413dbbeb4f8e985da87744afe32e1f3",
   "public/ui/lucide-license.txt": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
@@ -43,5 +42,9 @@
   "public/vendor/three-0.160.0/LICENSE": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
   "public/vendor/three-0.169.0/build/three.module.js": "0a3368c165eea773490aec7b77c22de70e3eac288503409256fdbf4d12578416",
   "public/vendor/three-0.169.0/LICENSE": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
-  "public/images/syntax-badge.svg": "b0a4d392de24d8c6fa1fc408431ae6c43a68a46d27035ee146dccdd763a7f90a"
+  "public/images/syntax-badge.svg": "b0a4d392de24d8c6fa1fc408431ae6c43a68a46d27035ee146dccdd763a7f90a",
+  "public/experiments/twigl-plume-sphere/assets/star-simulator-aa88a88a20.js": "aa88a88a20ce13431c96079563dc820989d17133ef510f19c8757522db1ae80c",
+  "public/experiments/twigl-plume-sphere/graphics-entry.css": "fd7589c78445b4241e5426988fcd9f2b9bb1a7b60a0afd83f153cdc41996c913",
+  "public/experiments/twigl-plume-sphere/graphics-entry.js": "bb28ff2ff89e2d1bbfc0ec45667301494e7c470a041ae6dc524f7d4f1d4bd057",
+  "public/experiments/twigl-plume-sphere/graphics-profiles.js": "a6b2608b3ae334d0b7763714026b4dbbb9f05e6966f280ca3c79584a4bb724c1"
 }

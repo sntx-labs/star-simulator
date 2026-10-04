@@ -7,11 +7,13 @@
 <link rel="icon" href="/images/syntax-badge.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/ui/construction.css">
 <link rel="stylesheet" href="/ui/experience-shell.css">
+<link rel="stylesheet" href="./graphics-entry.css">
+<script defer src="./graphics-entry.js"></script>
 <script defer src="/ui/experience-shell.js"></script>
 <script defer src="/ui/analytics.js"></script>
 </head>
 <body class="is-loading">
-<div class="hero-loader" role="status" aria-live="polite" aria-busy="true">
+<div class="hero-loader" hidden role="status" aria-live="polite" aria-busy="true">
 <div class="loader-content">
         <div class="loader-mark" aria-hidden="true">
           <img class="loader-still" src="/ui/construction-logo.png" alt="" width="844" height="906">
@@ -58,6 +60,18 @@
 </a>
 </header>
 <iframe class="experience-frame" inert aria-hidden="true" title="Star Simulator interactive experience" allow="autoplay; fullscreen; clipboard-write; gamepad" allowfullscreen></iframe>
-<noscript><style>.hero-loader{display:none}noscript{position:fixed;inset:0;z-index:10;background:#000}</style>Enable JavaScript to open this experience. <a href="https://labs.sntx.co/#work" target="_top">Back to Labs</a>.</noscript>
+<main class="graphics-entry" aria-labelledby="graphics-title">
+<section class="graphics-card">
+<h1 id="graphics-title">Star Simulator</h1>
+<h2 id="graphics-heading">Choose your graphics quality</h2>
+<div class="graphics-options" role="group" aria-labelledby="graphics-heading">
+<button type="button" data-quality="high"><strong>High</strong><span>Maximum detail</span></button>
+<button type="button" data-quality="medium"><strong>Medium</strong><span>Balanced</span></button>
+<button type="button" data-quality="low"><strong>Low</strong><span>Lighter rendering</span></button>
+</div>
+<p class="graphics-mobile-note" hidden>Performance may vary on mobile devices.</p>
+</section>
+</main>
+<noscript><style>.hero-loader,.graphics-entry{display:none}noscript{position:fixed;inset:0;z-index:10;background:#000}</style>Enable JavaScript to open this experience. <a href="https://labs.sntx.co/#work" target="_top">Back to Labs</a>.</noscript>
 </body>
 </html>

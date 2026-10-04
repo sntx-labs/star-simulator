@@ -1,6 +1,6 @@
 # Star Simulator
 
-Private working repository for [Star Simulator](https://labs.sntx.co/experiments/twigl-plume-sphere/). Updated from Syntax Labs version 62, commit `c656d1746d091eefbc1013a7e458aa8012f7a52f`, on 2026-10-03.
+Private working repository for [Star Simulator](https://labs.sntx.co/experiments/twigl-plume-sphere/). Updated from Syntax Labs version 65, commit `457e13da6b20be668db6dd63920ff57cee6b8147`, on 2026-10-03.
 
 ## Run the current Labs version
 
@@ -32,3 +32,7 @@ Keep this repository private until the owner approves publication. No new blanke
 The running website is still deployed separately through Sites. Pushing to this repository does not redeploy or change its public URL.
 
 To prepare runtime assets for the separate authoring snapshot, run `npm run labs:authoring`, then follow the printed npm install/build instructions. The published snapshot remains the reference for current Labs behavior.
+
+## Graphics selection
+
+The published experience waits for an explicit High, Medium, or Low choice before loading the scene. Rendering budgets are applied before GPU allocation and reapplied when switching any of the six visual presets. The editable authoring snapshot shares the budget module; the published shell remains the reference for the entry screen.

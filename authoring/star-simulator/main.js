@@ -1,3 +1,6 @@
+import { graphicsProfile, applyGraphicsProfile } from "./graphics-profiles.js";
+const graphicsLevel = new URLSearchParams(location.search).get("graphics");
+const graphicsBudget = graphicsProfile(graphicsLevel);
 import "./style.css";
 import "./sh-panel.css";
 import "./sh-panel.js";
@@ -132,14 +135,14 @@ const defaults = Object.freeze({
   paused: false,
 });
 
-const state = { ...defaults };
+const state = applyGraphicsProfile(defaults, graphicsLevel);
 const activePreset = () => TWIGL_PRESETS.find(preset => preset.id === state.twiglPreset) || TWIGL_PRESETS[0];
 
 const renderer = new THREE.WebGLRenderer({
   canvas,
   antialias: false,
   alpha: false,
-  powerPreference: "high-performance",
+  powerPreference: graphicsLevel === "low" ? "low-power" : "high-performance",
 });
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -1209,7 +1212,7 @@ const halo = new THREE.Mesh(new THREE.SphereGeometry(1, 128, 96), haloMaterial);
 halo.renderOrder = 1;
 scene.add(halo);
 
-const MAX_PARTICLES = 180000;
+const MAX_PARTICLES = graphicsBudget.particles;
 const particleGeometry = new THREE.BufferGeometry();
 const particlePositions = new Float32Array(MAX_PARTICLES * 3);
 const particleSeeds = new Float32Array(MAX_PARTICLES);
@@ -1611,7 +1614,7 @@ function syncState() {
   bloomPass.radius = state.bloomRadius;
   bloomPass.threshold = state.bloomThreshold;
   renderer.toneMappingExposure = state.exposure;
-  particleGeometry.setDrawRange(0, Math.floor(MAX_PARTICLES * qualityFractions[state.quality]));
+  particleGeometry.setDrawRange(0, Math.min(MAX_PARTICLES, Math.floor(180000 * qualityFractions[state.quality])));
 }
 
 function applyCameraDistance() {
@@ -1665,7 +1668,7 @@ function bind(control, handler = syncState) {
 
 function applySceneSettings(settings, presetId) {
   applyingScenePreset = true;
-  Object.assign(state, defaults, settings);
+  Object.assign(state, applyGraphicsProfile({ ...defaults, ...settings }, graphicsLevel));
   panelControllers.forEach(control => control.setValue(state[control.property]));
   replaceTwiglSource();
   replaceTwiglTarget();
