@@ -1,7 +1,7 @@
 {
   "public/experiments/twigl-plume-sphere/assets/index-M0w_AoWE.css": "61783b8fab046c02ffd525a392b624fd87b3de4c2f2faadbe05a9317926de7b6",
   "public/experiments/twigl-plume-sphere/experience.html": "e64ea617d97b537c122b52c349abe8c25ecaaa016ecb4257d2a3ef714ee5cf4b",
-  "public/experiments/twigl-plume-sphere/index.html": "c34db34983fd260f3d5508f83a7c5e2ae6e5db0478a96e7f73e308e74a6e4d00",
+  "public/experiments/twigl-plume-sphere/index.html": "1d1e6e5ce34b1ad0c9b0012ca319f710b19883fd83d2c2bbf4dc2abcdefc9df7",
   "public/ui/analytics.js": "335f2017714c3d5fae88d0bac4ae348f1a3fc520c0a0cc1720421bd403fdda9f",
   "public/ui/booking-cable-renderer.js": "2c6e3547a646d0c861f05fe6b36f8c2289cc7628fbb042c8c649a410186577a6",
   "public/ui/booking-cables.js": "1b84ac971972bf838168e179d14588504d4b1a9a5f5b08bad5b5f9ae5b8ad38e",
@@ -44,7 +44,7 @@
   "public/vendor/three-0.169.0/LICENSE": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
   "public/images/syntax-badge.svg": "b0a4d392de24d8c6fa1fc408431ae6c43a68a46d27035ee146dccdd763a7f90a",
   "public/experiments/twigl-plume-sphere/assets/star-simulator-aa88a88a20.js": "aa88a88a20ce13431c96079563dc820989d17133ef510f19c8757522db1ae80c",
-  "public/experiments/twigl-plume-sphere/graphics-entry.css": "fd7589c78445b4241e5426988fcd9f2b9bb1a7b60a0afd83f153cdc41996c913",
+  "public/experiments/twigl-plume-sphere/graphics-entry.css": "4b0f7a8d07dfeb2549b0f14eab521367af291b885a9ff3b294eb1c39710f0bf2",
   "public/experiments/twigl-plume-sphere/graphics-entry.js": "bb28ff2ff89e2d1bbfc0ec45667301494e7c470a041ae6dc524f7d4f1d4bd057",
   "public/experiments/twigl-plume-sphere/graphics-profiles.js": "a6b2608b3ae334d0b7763714026b4dbbb9f05e6966f280ca3c79584a4bb724c1"
 }

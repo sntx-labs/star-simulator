@@ -1,6 +1,6 @@
 # Star Simulator
 
-Private working repository for [Star Simulator](https://labs.sntx.co/experiments/twigl-plume-sphere/). Updated from Syntax Labs version 65, commit `457e13da6b20be668db6dd63920ff57cee6b8147`, on 2026-10-03.
+Private working repository for [Star Simulator](https://labs.sntx.co/experiments/twigl-plume-sphere/). Updated from Syntax Labs version 66, commit `c307777d0c866467b827247de4c290ea20baf81a`, on 2026-10-03.
 
 ## Run the current Labs version
 
