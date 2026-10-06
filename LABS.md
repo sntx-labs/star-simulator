@@ -7,6 +7,9 @@ Private working repository for [Star Simulator](https://labs.sntx.co/experiments
 Requires Node.js 20 or newer. No dependency installation is needed for this published version.
 
 ```sh
+git clone https://github.com/sntx-labs/star-simulator.git
+cd star-simulator
+npm run labs:verify
 npm run labs:dev
 ```
 
@@ -38,3 +41,11 @@ To prepare runtime assets for the separate authoring snapshot, run `npm run labs
 The published experience waits for an explicit High, Medium, or Low choice before loading the scene. Rendering budgets are applied before GPU allocation and reapplied when switching any of the six visual presets. The editable authoring snapshot shares the budget module; the published shell remains the reference for the entry screen.
 
 Chromosphere Surge is the starting visual preset at every graphics level. Azure Plume and the other four presets remain selectable.
+
+## Project links and coding-assistant prompt
+
+The in-project GitHub action links to this SNTX-Labs repository. Copy prompt includes this clone URL, the Labs preview/build workflow, scene-specific editing paths, and attribution. The shared project-card module was updated on 2026-10-06 from Syntax Labs source commit `02aca49000d891df21763798c4170638d5cc27a5`; scene files and their original snapshot provenance above are unchanged.
+
+`labs:verify` checks the reference file hashes before editing. Expected mismatches after intentional runtime edits should be reviewed and the snapshot manifest updated deliberately; do not suppress unexplained differences. `labs:build` assembles the runtime and does not recompile an authoring snapshot.
+
+Follow [@taylor_sntx on Twitter/X](https://x.com/taylor_sntx) for more experiments. For custom implementation help, [contact Syntax](https://sntx.co/).
