@@ -1,6 +1,6 @@
 # Star Simulator
 
-Private working repository for [Star Simulator](https://labs.sntx.co/experiments/twigl-plume-sphere/). Updated from Syntax Labs version 67, commit `9fd851a087b5618b95d486e2af84e1170acdf627`, on 2026-10-03.
+Source repository for [Star Simulator](https://labs.sntx.co/experiments/twigl-plume-sphere/). Updated from Syntax Labs version 67, commit `9fd851a087b5618b95d486e2af84e1170acdf627`, on 2026-10-03.
 
 ## Run the current Labs version
 
@@ -30,7 +30,7 @@ Editable authoring files are retained in `authoring/star-simulator/`. This is an
 
 ## Publication and rights
 
-Keep this repository private until the owner approves publication. No new blanket open-source license is assigned by this migration. Existing licenses, attribution and third-party notices remain applicable. Review bundled textures, models, fonts, shaders and dependencies before public release. Private visibility does not revoke licenses previously granted for public versions.
+Taylor approved this Star Simulator source release on October 9, 2026. Taylor-owned code is MIT-licensed under LICENSE. Preserve the six Yohei snippets' full MIT notice, all dependency notices, and font terms; see THIRD_PARTY_NOTICES.md. This release does not publish ASTERION or other project repositories.
 
 The running website is still deployed separately through Sites. Pushing to this repository does not redeploy or change its public URL.
 
@@ -44,7 +44,7 @@ Chromosphere Surge is the starting visual preset at every graphics level. Azure 
 
 ## Project links and coding-assistant prompt
 
-The in-project GitHub action links to this SNTX-Labs repository. Copy prompt includes this clone URL, the Labs preview/build workflow, scene-specific editing paths, and attribution. The shared project-card module was updated on 2026-10-06 from Syntax Labs source commit `02aca49000d891df21763798c4170638d5cc27a5`; scene files and their original snapshot provenance above are unchanged.
+The shared project-card module incorporates the October 8 release fixes and October 9 Star MIT release scope. Star's public source action is enabled after anonymous repository and ZIP access is verified. Other source actions remain unavailable until their own release. The Star runtime adds the full Yohei MIT banner to the existing bundle; the executable payload is unchanged. Exact source and bundle fingerprints are recorded in public/experiments/twigl-plume-sphere/yohei-shader-provenance.json. The live Labs website is deployed separately.
 
 `labs:verify` checks the reference file hashes before editing. Expected mismatches after intentional runtime edits should be reviewed and the snapshot manifest updated deliberately; do not suppress unexplained differences. `labs:build` assembles the runtime and does not recompile an authoring snapshot.
 

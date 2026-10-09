@@ -9,7 +9,8 @@
     "labs:verify": "node scripts/labs-verify.mjs",
     "start": "node scripts/labs-serve.mjs",
     "build": "node scripts/labs-build.mjs",
-    "test": "node scripts/labs-verify.mjs",
+    "test": "node scripts/labs-verify.mjs && node --test tests/*.test.mjs",
     "labs:authoring": "node scripts/labs-authoring.mjs"
-  }
+  },
+  "license": "MIT"
 }

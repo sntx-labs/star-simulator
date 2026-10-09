@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-08T15:15:13.455Z",
+  "grant": {
+    "author": "Yohei Nishitsuji",
+    "profile": "https://x.com/YoheiNishitsuji",
+    "statement": "My code shared @x is MIT Licensed.",
+    "verifiedTraceDate": "2026-10-07",
+    "evidenceBasis": "Primary-profile grant and exact post matches supplied by the existing October 7 trace; no new primary X read claimed."
+  },
+  "copyright": "Copyright (c) 2025 Yohei Nishitsuji",
+  "license": "MIT",
+  "scope": "Six Yohei shader snippets under their MIT grant. Taylor-owned Star Simulator application and wrapper code is separately released under MIT in licenses/STAR-SIMULATOR-MIT.txt; third-party and asset terms remain applicable.",
+  "localVerification": {
+    "baselineBundle": "star-simulator-9a3e8645c7.js",
+    "baselineBundleSha256": "9a3e8645c74e1411443d6c4a2ed1eab4667c26c204279c5fa03201de438fbf45",
+    "currentBundle": "star-simulator-9b14972019.js",
+    "currentBundleSha256": "9b149720191c135ed19df806ed0356beaf885d178a485cada75312b37b7d89f7",
+    "payloadUnchangedAfterNotice": true,
+    "authoringSource": "authoring/star-simulator/twigl-presets.js in the existing migration checkout",
+    "authoringSourceSha256": "673e5dd901cf94fad356415fa20ca166f8e468fb5f0fc05c985d8d610e7be528",
+    "unrelatedTaylorPostExcluded": "https://x.com/taylor_sntx/status/2087274960939090242"
+  },
+  "snippets": [
+    {
+      "id": "1986780675169808394",
+      "label": "Log interference / violet",
+      "family": "Log interference",
+      "sourceUrl": "https://x.com/YoheiNishitsuji/status/1986780675169808394",
+      "sourceTextSha256": "c0aa40d1aa7f5f2c4579bff84a8b43b5648868ff6ed49bd9fe234dbeecc3717f",
+      "sourceUtf8Bytes": 266,
+      "exactLocalBundleMatch": true,
+      "activeDriver": true
+    },
+    {
+      "id": "1877626433008496846",
+      "label": "Interference veil",
+      "family": "Log interference",
+      "sourceUrl": "https://x.com/YoheiNishitsuji/status/1877626433008496846",
+      "sourceTextSha256": "d17725407cd002ed3d2afa79da920fab72c8bf8eb49574a2e1a40df21a9b546f",
+      "sourceUtf8Bytes": 266,
+      "exactLocalBundleMatch": true,
+      "activeDriver": false
+    },
+    {
+      "id": "1880739133716570129",
+      "label": "Distance lattice",
+      "family": "Distance lattice",
+      "sourceUrl": "https://x.com/YoheiNishitsuji/status/1880739133716570129",
+      "sourceTextSha256": "33dca4023de1993d82ef40257881a0797f0718d97a9eeffe74587e3a482c97b7",
+      "sourceUtf8Bytes": 256,
+      "exactLocalBundleMatch": true,
+      "activeDriver": false
+    },
+    {
+      "id": "1900460641590403482",
+      "label": "Microscopic ring",
+      "family": "Microscopic ring",
+      "sourceUrl": "https://x.com/YoheiNishitsuji/status/1900460641590403482",
+      "sourceTextSha256": "a5f6ab4310f1aa01e0000ea84a4a2b419383c21ea77f3db9b8d7de487e191acd",
+      "sourceUtf8Bytes": 208,
+      "exactLocalBundleMatch": true,
+      "activeDriver": false
+    },
+    {
+      "id": "1936046385700176266",
+      "label": "Amber log fold",
+      "family": "Log interference",
+      "sourceUrl": "https://x.com/YoheiNishitsuji/status/1936046385700176266",
+      "sourceTextSha256": "abdcfe4a74f5f77166851af135f3ce8871eb44c31fc0f5c3657db8c5b9c211b4",
+      "sourceUtf8Bytes": 267,
+      "exactLocalBundleMatch": true,
+      "activeDriver": false
+    },
+    {
+      "id": "1961047535101059204",
+      "label": "Matrix tide",
+      "family": "Matrix wave",
+      "sourceUrl": "https://x.com/YoheiNishitsuji/status/1961047535101059204",
+      "sourceTextSha256": "197fef095aca13b1069d5f8dbf8b6b6f6f90090cb42927404ab3defd9f913d31",
+      "sourceUtf8Bytes": 197,
+      "exactLocalBundleMatch": true,
+      "activeDriver": false
+    }
+  ],
+  "releaseAuthoring": {
+    "file": "authoring/star-simulator/twigl-presets.js",
+    "sha256": "f4be8ef36cd6f77696862df17570cccd17e4c5b422cde6539f1e7b4f33b63574",
+    "change": "Full Yohei MIT header added on 2026-10-09; six literal shader sources unchanged."
+  }
+}

@@ -40,3 +40,5 @@
 .sh-panel [data-labs-advanced][hidden]{display:none!important}
 @media(prefers-reduced-motion:reduce){.sh-panel .source-actions :is(a,button){transition:none}}
 @media(pointer:coarse){.sh-panel .source-actions :is(a,button){min-height:44px}.sh-panel .source-menu-toggle{width:44px;flex-basis:44px}.sh-panel .source-copy-button{min-width:106px;padding-inline:8px}}
+
+.sh-panel .source-availability{min-width:0;color:rgba(255,255,255,.5);font:400 10px/1.5 var(--sh-font);overflow-wrap:anywhere}
