@@ -336,7 +336,7 @@
     "license": "Taylor's Star Simulator application and wrapper code is MIT-licensed. The six credited Yohei Nishitsuji shader snippets retain their separate MIT grant; preserve the full copyright, permission text and exact snippet provenance in public/experiments/twigl-plume-sphere/THIRD_PARTY_NOTICES.md. Preserve Three.js, Lucide and IBM Plex font notices and their separate terms. The code license does not replace asset terms.",
     "licenseLabel": "MIT source · third-party notices",
     "repository": "star-simulator",
-    "sourceStatus": "pending",
+    "sourceStatus": "public",
     "referenceNotes": "The reference has six compositions: Azure Plume, Chromosphere Surge, Ember Veins, Ember Current, Abyssal Current and White Coral Labyrinth. Preserve its selected art direction, preset-only controls and responsive presentation when describing the brief.",
     "github": "https://github.com/sntx-labs/star-simulator",
     "download": "https://github.com/sntx-labs/star-simulator/archive/refs/heads/main.zip"
